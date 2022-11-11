@@ -1,0 +1,307 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.dark_theme{
+    background-color: #101e2a;
+    color: #fff;
+}
+
+*{
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+*::selection{
+    background-color: #96B1DC;
+    color: #101e2a;
+}
+
+img::selection{
+    background-color: rgba(0,0,0,0);
+}
+
+button{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    margin: 15px;
+    outline: none;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+#img_theme{
+    width: 58px;
+    height: 58px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#titlediv{
+    padding-top: 5%;
+    margin: auto;
+    border-bottom: 2px solid #000;
+    width: 60%;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 2.5em;
+    word-spacing: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+#networks{
+    padding: 3%;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    background-color: rgb(200, 200, 200);
+}
+
+.light_networks{
+    background-color: #999;
+}
+
+a{
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 60px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: none;
+}
+
+#img_twitter, #img_instagram{
+    z-index: 2;
+    width: 40px;
+    height: 40px
+}
+
+#img_github{
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+}
+
+#img_rootme{
+    z-index: 2;
+    width: 35px;
+}
+
+.background{
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #999;
+    transition: 0.4s;
+}
+
+a:hover #twitter_background{
+    top: 0;
+    background: linear-gradient(to top, #1da1f2, #96B1DC);
+}
+
+a:hover #github_background{
+    top: 0;
+    background: linear-gradient(to top, #02007d, #500893);
+    opacity: 0.5;
+}
+
+a:hover #rootme_background{
+    top: 0;
+    background: linear-gradient(to top, #191919 0%, #41B25A 100%);
+    opacity: 0.7;
+}
+
+a:hover #instagram_background{
+    top: 0;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    opacity: 0.8;
+}
+
+#subtitle{
+    width: 40%;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    margin: auto;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+}
+
+#subtitle p{
+    text-align: center;
+}
+
+#sup{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#email{
+    background-color: rgb(200, 200, 200);
+    width: 70px;
+    height: 70px;
+}
+
+#img_email{
+    z-index: 2;
+    width: 50px;
+    height: 50px
+}
+
+a:hover #email_background{
+    top: 0;
+    background: linear-gradient(to top, #ff3232, #bb5858);
+    opacity: 0.6;
+}
+
+#email_background{
+    width: 70px;
+    height: 70px;
+}
+
+#loading:after{
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 1.3ms infinite;      
+    animation: ellipsis steps(4,end) 1.3s infinite;
+    content: "..."; 
+    width: 0px;
+}
+
+@keyframes ellipsis{
+    to{width: 20px;}
+}
+  
+@-webkit-keyframes ellipsis{
+    to{width: 20px;}
+}
+
+#under_construction{
+    margin-left: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 500px){
+
+    #titlediv{
+        padding-top: 20%;
+        margin: auto;
+        width: 60%;
+    }
+    
+    h1{
+        font-size: 1.3em;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        word-spacing: 0.25em;
+        letter-spacing: 0.05em;
+    }
+
+    #subtitle{
+        margin-bottom: 15%;
+        font-size: 0.9em;
+    }
+
+    #img_theme{
+        width: 40px;
+        height: 40px;
+    }
+
+    a{
+        width: 40px;
+        height: 40px;
+    }
+    
+    #img_twitter, #img_instagram{
+        width: 25px;
+        height: 25px;
+    }
+
+    #img_github{
+        width: 30px;
+        height: 30px;   
+    }
+
+    #img_rootme{
+        z-index: 2;
+        width: 23px;
+    }
+
+    .background{
+        top: 80px;
+        width: 40px;
+        height: 40px;
+    }
+
+    #email{
+        width: 45px;
+        height: 45px;
+    }
+
+    #img_email{
+        width: 30px;
+        height: 30px;
+    }
+
+    #networks{
+        margin-bottom: 15%;
+    }
+
+    #under_construction{
+        font-size: 0.8em;
+        bottom: 10px;
+        left: 10px;
+        position: absolute;
+    }
+
+    #loading:after{
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+        -webkit-animation: ellipsis steps(4,end) 1.3ms infinite;      
+        animation: ellipsis steps(4,end) 1.3s infinite;
+        content: "..."; 
+        width: 0px;
+    }
+    
+    @keyframes ellipsis{
+        to{width: 14px;}
+    }
+    
+    @-webkit-keyframes ellipsis{
+        to{width: 14px;}
+    }
+} 
