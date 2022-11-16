@@ -23,7 +23,7 @@ img::selection{
     background-color: rgba(0,0,0,0);
 }
 
-button{
+#btn_mode{
     background-color: rgba(0,0,0,0);
     border: 0;
     overflow: hidden;
@@ -123,7 +123,7 @@ a{
 
 a:hover #twitter_background{
     top: 0;
-    background: linear-gradient(to top, #1da1f2, #96B1DC);
+    background: linear-gradient(to top, #3ea5e4, #9fb7de);
 }
 
 a:hover #github_background{
@@ -208,10 +208,12 @@ a:hover #email_background{
 
 #under_construction{
     margin-left: 10px;
-    position: absolute;
-    left: 5px;
     bottom: 0px;
     font-size: 1.2em;
+}
+
+footer{
+    position: absolute;
 }
 
 @media (max-width: 500px){
@@ -282,9 +284,6 @@ a:hover #email_background{
 
     #under_construction{
         font-size: 0.8em;
-        bottom: 10px;
-        left: 10px;
-        position: absolute;
     }
 
     #loading:after{
