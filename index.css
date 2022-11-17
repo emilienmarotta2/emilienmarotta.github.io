@@ -36,6 +36,27 @@ img::selection{
     position: fixed;
 }
 
+#project{
+    list-style-type: none;
+    padding-bottom: 5%;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#project:hover{
+    text-decoration: underline;
+}
+
+ul{
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
 #img_theme{
     width: 58px;
     height: 58px;
@@ -117,8 +138,27 @@ a{
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #999;
-    transition: 0.4s;
+    transition: 0.5s;
+}
+
+#twitter_background{
+    background: linear-gradient(to top, #3ea5e4, #9fb7de);
+}
+
+#github_background{
+    background: linear-gradient(to top, #02007d, #500893);
+}
+
+#rootme_background{
+    background: linear-gradient(to top, #191919 0%, #41B25A 100%);
+}
+
+#instagram_background{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#email_background{
+    background: linear-gradient(to top, #ff3232, #bb5858);
 }
 
 a:hover #twitter_background{
@@ -142,6 +182,12 @@ a:hover #instagram_background{
     top: 0;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     opacity: 0.8;
+}
+
+a:hover #email_background{
+    top: 0;
+    background: linear-gradient(to top, #ff3232, #bb5858);
+    opacity: 0.6;
 }
 
 #subtitle{
@@ -177,43 +223,9 @@ a:hover #instagram_background{
     height: 50px
 }
 
-a:hover #email_background{
-    top: 0;
-    background: linear-gradient(to top, #ff3232, #bb5858);
-    opacity: 0.6;
-}
-
 #email_background{
     width: 70px;
     height: 70px;
-}
-
-#loading:after{
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4,end) 1.3ms infinite;      
-    animation: ellipsis steps(4,end) 1.3s infinite;
-    content: "..."; 
-    width: 0px;
-}
-
-@keyframes ellipsis{
-    to{width: 20px;}
-}
-  
-@-webkit-keyframes ellipsis{
-    to{width: 20px;}
-}
-
-#under_construction{
-    margin-left: 10px;
-    bottom: 0px;
-    font-size: 1.2em;
-}
-
-footer{
-    position: absolute;
 }
 
 @media (max-width: 500px){
@@ -234,6 +246,10 @@ footer{
 
     #subtitle{
         margin-bottom: 15%;
+        font-size: 0.9em;
+    }
+
+    #project{
         font-size: 0.9em;
     }
 
@@ -281,26 +297,5 @@ footer{
     #networks{
         margin-bottom: 15%;
     }
-
-    #under_construction{
-        font-size: 0.8em;
-    }
-
-    #loading:after{
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: bottom;
-        -webkit-animation: ellipsis steps(4,end) 1.3ms infinite;      
-        animation: ellipsis steps(4,end) 1.3s infinite;
-        content: "..."; 
-        width: 0px;
-    }
     
-    @keyframes ellipsis{
-        to{width: 14px;}
-    }
-    
-    @-webkit-keyframes ellipsis{
-        to{width: 14px;}
-    }
 } 
