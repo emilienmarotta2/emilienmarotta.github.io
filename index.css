@@ -36,27 +36,6 @@ img::selection{
     position: fixed;
 }
 
-#project{
-    list-style-type: none;
-    padding-bottom: 5%;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-#project:hover{
-    text-decoration: underline;
-}
-
-ul{
-    padding: 0;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
 #img_theme{
     width: 58px;
     height: 58px;
@@ -246,10 +225,6 @@ a:hover #email_background{
 
     #subtitle{
         margin-bottom: 15%;
-        font-size: 0.9em;
-    }
-
-    #project{
         font-size: 0.9em;
     }
 
